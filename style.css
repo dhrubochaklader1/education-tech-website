@@ -1,0 +1,45 @@
+.carousel-item::before {
+    background: black;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    position: absolute;
+    color: white;
+    bottom: 180px;
+}
+
+@media screen and (max-width: 688px) {
+    .carousel-item img {
+        width: 100%;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        top: 95px;
+
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 689px) and (max-width: 989px) {
+    .carousel-caption {
+        position: absolute;
+        color: white;
+        top: 0px;
+        bottom: 10px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+}
